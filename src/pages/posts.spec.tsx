@@ -1,5 +1,4 @@
-import { screen, waitFor, render } from "@testing-library/react"
-import { ApiProvider } from "@reduxjs/toolkit/query/react"
+import { waitFor, render } from "@testing-library/react"
 import { server } from "../test/server"
 import PostList from "./posts"
 import { Provider } from "react-redux"
