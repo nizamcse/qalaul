@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "As you can observe in the code of sass file, we can use variables and also perform arithmetic operations in sass files. This is the advantage of using sass. 🔥",
+      "author": "Nizam",
+      "comments": [{ "id": 1, "title": "Hello world 1 🔥", "author": "Labib" }]
+    },
+    {
+      "id": 2,
+      "title": "Hello world 2 🤟🏽",
+      "author": "Jon",
+      "comments": [
+        { "id": 2, "title": "Hello world 2 🔥", "author": "Doe" },
+        { "id": 3, "title": "Hello world 2 🔥", "author": "Tiger" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Hello world 3 💕",
+      "author": "Alex",
+      "comments": [
+        { "id": 4, "title": "Hello world 3 🔥", "author": "Joe" },
+        { "id": 5, "title": "Hello world 3 🔥", "author": "Shafin" },
+        { "id": 6, "title": "Hello world 3 🔥", "author": "Arbert" }
+      ]
+    }
+  ]
+}

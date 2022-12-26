@@ -1,0 +1,132 @@
+body {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.divider {
+  margin: 5px 0;
+  background-color: #65676b;
+  height: 1px;
+}
+
+.card {
+  padding: 14px;
+  border-radius: 6px;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #ffffff;
+  color: #050505;
+}
+.post-card {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-icon {
+  background-image: url(https://cdn.cdnlogo.com/logos/f/41/facebook-reaction-like.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+}
+
+.count-block {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.count-block * {
+  font-weight: lighter;
+  color: #6f7175;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.action-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  gap: 10px;
+  opacity: 0.7;
+  flex: 1;
+  border-radius: 5px;
+}
+
+.action-button:hover {
+  background-color: #f2f2f2;
+}
+
+.action-like-icon {
+  background-image: url(https://static.thenounproject.com/png/1218615-200.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  height: 18px;
+  width: 18px;
+}
+
+.action-comment-icon {
+  background-image: url(https://cdn.iconscout.com/icon/free/png-256/comment-2652894-2202811.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 18px;
+  width: 18px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+}
+
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
