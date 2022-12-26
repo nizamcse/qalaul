@@ -10,7 +10,7 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   return (
-    <div className="card my-16">
+    <div className="card my-16 post-card">
       <PostHeader
         image={post.owner.picture}
         title={post.owner.firstName}

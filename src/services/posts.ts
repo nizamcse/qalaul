@@ -27,9 +27,10 @@ export interface IPost {
   publishDate: string
   text: string
   owner: IOwner
+  tags: string[]
 }
 
-interface IPostsResponse {
+export interface IPostsResponse {
   data: IPost[]
 }
 interface ICommentsResponse {
