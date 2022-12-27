@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react"
+import { MdThumbUp, MdModeComment, MdShare, MdMoreHoriz } from "react-icons/md"
 import { IComment, usePostDetailsQuery } from "../../services/posts"
 import Comments from "../comment"
+import IconButton from "../icon-buttom"
+import classes from "./index.module.scss"
 
 type Props = {
   likes: number
@@ -38,28 +41,13 @@ const PostFooter = ({ likes, id }: Props) => {
   }, [data, error])
   return (
     <div>
-      <div className="post-footer">
-        <div className="counter">
-          <div className="count-block">
-            <div className="like-icon"></div>
-            <p>{likes}</p>
-          </div>
-          <div className="count-block">
-            <p>{comments.length} comments</p>
-          </div>
-        </div>
-        <div className="divider" />
-        <div className="action-buttons">
-          <div className="action-button">
-            <div className="action-like-icon"></div>
-            <p>Like</p>
-          </div>
-          <div className="action-button">
-            <div className="action-comment-icon"></div>
-            <p>Comment</p>
-          </div>
-        </div>
-        <hr />
+      <div className={classes.container}>
+        <IconButton icon={<MdThumbUp />} />
+        <IconButton icon={<MdModeComment />} />
+        <IconButton icon={<MdShare />} />
+        <IconButton icon={<MdMoreHoriz />} />
+      </div>
+      <div>
         <Comments postId={id} comments={comments} />
       </div>
     </div>
