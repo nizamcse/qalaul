@@ -42,8 +42,8 @@ const PostFooter = ({ likes, id }: Props) => {
   return (
     <div>
       <div className={classes.container}>
-        <IconButton icon={<MdThumbUp />} />
-        <IconButton icon={<MdModeComment />} />
+        <IconButton icon={<MdThumbUp />} value={likes} />
+        <IconButton icon={<MdModeComment />} value={comments.length} />
         <IconButton icon={<MdShare />} />
         <IconButton icon={<MdMoreHoriz />} />
       </div>
