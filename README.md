@@ -1,4 +1,4 @@
-## No UI library is being used except react-icons. Everything created from scratch and created project using ###create-react-app
+## No UI library is being used except react-icons. Everything created from scratch and created project using create-react-app
 ## Technology used
 - React
 - RTK
